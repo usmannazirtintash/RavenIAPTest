@@ -147,14 +147,14 @@ extension MasterViewController {
 extension MasterViewController : SKRequestDelegate {
   
   func requestDidFinish(_ request: SKRequest) {
-    //print("request finish")
+    print("request finish")
     
     let validator = ReceiptValidator()
     validator.validateReceipt()
   }
   
   func request(_ request: SKRequest, didFailWithError error: Error) {
-    //print("request failed")
+    print("request failed")
   }
 }
 
@@ -166,7 +166,7 @@ struct ReceiptValidator {
             let receiptData = try receiptLoader.loadReceipt()
           let base64encodedreceipt = receiptData.base64EncodedString(options: NSData.Base64EncodingOptions.endLineWithCarriageReturn)
           
-          print("REFRESHED RECEIPT (with base64encoding) :\n\n\n\(base64encodedreceipt)")
+          print("REFRESHED RECEIPT (with base64encoding):\n\n\n\(base64encodedreceipt)")
           
             return
         } catch {

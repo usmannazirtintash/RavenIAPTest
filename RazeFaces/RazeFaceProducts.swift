@@ -30,9 +30,13 @@ import Foundation
 
 public struct RazeFaceProducts {
   
-  public static let SwiftShopping = "com.raven.raveniaptest.swiftshoppingg"
+  public static let SwiftShopping = "com.raven.raveniaptest.renewablee"
+  public static let SwiftShopping2 = "com.raven.raveniaptest.swiftshoppingg"
+  public static let SwiftShopping3 = "com.raven.raveniap.renewablesubscription"
   
   private static let productIdentifiers: Set<ProductIdentifier> = [RazeFaceProducts.SwiftShopping]
+//                                                                   RazeFaceProducts.SwiftShopping2,
+//                                                                   RazeFaceProducts.SwiftShopping3]
 
   public static let store = IAPHelper(productIds: RazeFaceProducts.productIdentifiers)
 }
